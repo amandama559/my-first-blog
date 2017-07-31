@@ -1,0 +1,261 @@
+/*body {
+  background-image:url(http://media.tumblr.com/tumblr_m15d6mXheB1qe92a9.jpg);
+}*/
+
+.parallex{
+  background-image:url("http://st2.depositphotos.com/2031485/9071/i/950/depositphotos_90711954-stock-photo-repeated-wallpaper-with-faded-floral.jpg");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallex2{
+  background-image: url("https://s-media-cache-ak0.pinimg.com/736x/44/f3/ed/44f3ed6f2d1f2a6a3fe82ee58a045134--laptop-backgrounds-background-laptop-desktop-wallpapers.jpg");
+  height: 940px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: repeat;
+  background-size: cover;
+}
+
+.parallex3{
+  background-image: url("http://68.media.tumblr.com/5570013c53d9ac6d3b15fe44da1bebd7/tumblr_mrjgavYqcX1qjlxbjo1_1280.jpg");
+  height: 1200px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: space;
+  background-size: cover;
+  /*http://todofondos.com/bin/fondos/07/50/16d.jpg*/
+}
+
+
+h4{
+  font-size: 28px;
+  color: #d87979;
+  font-family: 'Dancing Script', cursive;
+}
+
+.top{
+  text-align: center;
+  float: left;
+  width: 22%;
+  padding-left: 15px;
+}
+
+#whoamititle{
+  padding-left: 50px;
+}
+
+#likestitle{
+  padding-right: 50px;
+}
+
+/*Amanda's Portfolio - title*/
+h1{
+  font-family: 'Dancing Script', cursive;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  color: #d87979;
+}
+
+h1:hover{
+  color: #a3bef6;
+  transform: rotate(10deg);
+}
+
+h4:hover{
+  color: #a3bef6;
+}
+
+#aboutme{
+  font-size: 36px;
+  color: #d87979;
+  text-align: center;
+  padding-top: 0px;
+}
+
+#likesdislikesfun{
+  text-align: center;
+  font-size: 40px;
+  padding-top: 50px;
+}
+
+#likes{
+  padding-top: 20px;
+}
+
+p{
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 36px;
+  text-align: center;
+  color: black;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+
+#websites{
+  font-family: 'PT Sans Narrow', sans-serif;
+  font-size: 36px;
+  color: #d87979;
+  text-align: left;
+  width: 100%;
+  padding-top: 34px;
+}
+#youtube{
+  padding-top: 7px;
+  height: 13vh;
+  width: 10.5vh;
+}
+#instagram{
+  height: 15vh;
+  width: 15vh;
+}
+#snapchat{
+  padding-top: 7px;
+  height: 10.4vh;
+  width: 10.4vh;
+}
+#pennyanddash{
+  padding-top: 28px;
+  padding-right: 7px;
+  height: 10.3vh;
+  width: 10.3vh;
+}
+
+
+li {
+  font-size: 36px;
+  text-align: center;
+  font-family: 'PT Sans Narrow', sans-serif;
+  color: black;
+}
+
+lh{
+  font-weight:bold;
+  font-size: 42px;
+}
+#heading{
+  text-align: left;
+}
+
+ul{
+  font-family: 'Dancing Script', cursive;
+  font-size: 38px;
+  color: #d87979;
+  text-align: center;
+  list-style: none;
+
+}
+ol{
+  font-family: 'Dancing Script', cursive;
+  font-size: 38px;
+  color: #d87979;
+  list-style-position: inside;
+}
+
+#fun{
+  text-align: center;
+  padding-top: 460px;
+}
+
+.half-width {
+  text-align: center;
+  box-sizing: border-box;
+}
+
+#dasher{
+  height: 30vh;
+  width: 20vh;
+  padding-left: 75px;
+}
+#fam{
+  height: 30vh;
+  width: 34vh;
+  padding-left: 20px;
+}
+#me{
+  height: 30vh;
+  width:22vh;
+  padding-left:53px;
+}
+#beach{
+  height: 30vh;
+  width: 23vh;
+  padding-left: 77px;
+}
+#impact{
+  height: 30vh;
+  width:33vh;
+  padding-left: 14px;
+}
+#somefam{
+  height: 30vh;
+  width: 32vh;
+  padding-left: 20px;
+}
+.next{
+  width: 15.5%;
+  float: left;
+  box-sizing: border-box;
+}
+
+#scratch{
+ text-align:center;
+ float: left;
+}
+.game{
+  width: 50%;
+  float: left;
+  padding-top: 150px;
+}
+
+
+h2{
+  font-size: 36px;
+  font-family: 'Dancing Script', cursive;
+  color: #d87979;
+  text-align: left;
+  padding-left: 60px;
+  padding-top: 120px;
+}
+
+h3{
+  text-align: center;
+  font-size: 36px;
+  font-family: 'Dancing Script', cursive;
+  color: #d87979;
+}
+
+#mtc{
+  width: 35vh;
+  height: 37vh;
+  float: left;
+}
+#firstpic{
+  width: 35vh;
+  height: 37vh;
+}
+#linkedin{
+  width: 35vh;
+  height: 37vh;
+}
+#heart{
+  width: 35vh;
+  height: 37vh;
+}
+#bowling{
+  width: 35vh;
+  height: 37vh;
+}
+#girlswhocode{
+  float: left;
+}
+.gwc_pics{
+  float: left;
+  width: 20%;
+  box-sizing: border-box;
+}
