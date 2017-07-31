@@ -1,155 +1,22 @@
-<!DOCTYPE html>
+{% load staticfiles %}
 <html>
-  <head>
-    <title> Amanda's Blog </title>
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Open+Sans">
-    <link rel="stylesheet" type="text/css" href="post_list.css">
-    <link href="https://fonts.googleapis.com/css?family=Anton|Kurale" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Fjalla+One" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
-
-  </head>
-<div class="parallex">
-
-  <div id="title">
-    <h1>Amanda's Personal Portfolio</h1>
-  </div>
-
-  <body>
-  <div id="top">
-    <div id="whoamititle"class="top">
-      <a href="#WhoamI"><h4>Who am I?</h4></a>
-    </div>
-    <div id="likestitle"class="top">
-      <a href="#likes"><h4>Likes, Dislikes, & Fun Facts</h4></a>
-    </div>
-    <div id="webpagetitle"class="top">
-      <a href="#websites"><h4>Favorite Webpages</h4></a>
-    </div>
-    <!-- <div id="scratchtitle"class="top">
-      <a href="#scratch"><h4>Scratch Game</h4></a>
-    </div> -->
-    <div id="gwctitle"class="top">
-      <a href="#girlswhocode"><h4>Girls Who Code</h4></a>
-    </div>
-  </div>
-
-<!--pictures at the top  -->
-      <div class="next">
-        <img id="somefam" src="https://lh3.googleusercontent.com/Nqfsfne29Z-czA8f0qCFkPMzuxZef7cvp1Gjm6YnDYD09MzFZ3hl1G_yZ2KpccY7EEcl6H7ll0L0LLAKTOwJ-7swPb17yyyKALKyoYnVljnrZIjDo6IHGVxjZbA9uZbVMvn-6gOHI2uenEWba2dBylk0kmJPvaQ7zsrxv2soYCAsVbShmlx-ikINeK8QIFY6W4FDm8-Mr6XOIZW7rkVAe8i_jBUEadsR2j_YG_7fHBugXssN5xTX_gAJeqtfxXPk5y-Ntv9sWl6OGaS6RaPgY5TvvtTjAddgGj0j-ZXbW1kN-fRRiIHpn4v2-_9PkCVrfNz91PanBE9Hl4Kr6dR0lS96OWKLJRXtwVDqnFsgRXm1S2awb8mKSb5bohlAHbPLQ4XN7cuU9CVs2w3tM1pq3KN_o2tAVfQ-JjJJaN7Qdnn9FRXImnu8EyG279y9e1utdqSVpTomEimGayBeCfkEMGZw-H40MeRaFvCqmB6CpRv95jFeEeb8b4i4yy4kZ2xTVQccV0Vmlf0VUCTFLT22id8uBIaO-O8ZKuauCAWARRzl2QhibV88bBs2LW_XgnveSySERp6Po8SZ7fkhjBYBDFWNKoAUzqkrmkLMOC-e6_WWUDwc7p7mGxiO=w1710-h1283-no"/>
-      </div>
-      <div class="next">
-        <img id="dasher" src="https://lh3.googleusercontent.com/UE3Jo2QZNuNX4CiIcw99Ao0JpDHTPMkBvixxab6T-9Dygdq5EP7YmJ5buo1zwNc4kZj2zXbRbEY-Pi3Zhscgq0EGQpGhiK5WTscTWCwZCVQkap4BLCTgfaGe4_XH_alvAU8K-pdpwecrk7fvBv8bv3hlTQN5fXYhQWkSge06zPEWgoTy-18-SZHqdaitGkA3xwDoUy10-y246N8VCCYrc2ltDVZYD4abrVJj7zwPhBN_aeDoqN1o3fGVYMbteZhdpb94jK_DNprSU5EwHx4FAe1pqCHr5J8vdpgCqnZhpNCaUvwAJboHivXA33bxWPZp0Q8u0DfIfKRJCeFqlaFbtXr9MmdOVzFjfkfRInjxhP8Gw-5EK8-eGCSEI_8OsguS3-pK7DRUZppmGCA9Vu29GX6GtyoJBBdKTsU9qaTJ5qespGkwSO_xT5Tm8qsn5vSTcuJn4t3fit_MN_34G0ImF5JchOzkPvW6w5Gh0hVEON7DXtNRYAYKMFVf-upfefBLXg9Oue2tDdnOnziaySq0rG-CRTRLjua7yk9_tqfyMUqz2W5up4AzIIZddHDddbxZ7TEarBVSljC35dyzJ7hTcXqilS9i-u7Y_g6hn6wUi7Kexo1-QLL2wHuy=w1029-h1284-no" />
-      </div>
-      <div class="next">
-          <img id="impact" src="https://lh3.googleusercontent.com/O1sV1G89ot3ITVO1bx--OaONcNYuiXbWbCQHClT9zqAlYJ5riBNXkZiaKh-GvFZLPIGu3Txu1ddWDvk-qJsRw0HThMTwMBEto34-Pk2F-WYTn6nXgJW9AxQcjuUeCnN1kA6McERoBWhKsK5RfJjt8NNjND0P8P4CyFS6-_BpdF7nWkyOpqbqUIUe4RimRbkMbE8H-VfxUdE7g8GWfPAdgCREvoDHYn7Ah9_DkYkbhewpFoR7W5kpQdgYttKSlVkjw5CXr3X2nsm4Tn-cuyLLglNqaWYFekLnnFnhtxf_IbuXZAFZuBZF1GG9Iu3v_JcNXZsyqiAQPDqZiIjEBK79K2P6fhKdAQs3l6iTSqvNND1Eap9Z2sgNRUoRY6iqv6jJxgTeW7imDy_fAEUUkigKtkCAGdq9mFlLlFp6DLAaN7czOUNHeqDeap_PhEzqO8RqarKWUnXw-hwk0aWJw9h_aLCo-WYYxsFNLz35sEuTxs7O-KG13JGKOXlCBmxv7wjopnCBI5T1I3kCDG5_N-Jfav6esmC7nzQ8kmBGAM7wgiv6m8ZawMOBF6bRjCY9q7lZnjZR_oe5h61RGlErlLV4C-rdslCVfJeJ0-humn7GeGhMhr4gyB_n-M6p=w1710-h1283-no"/>
-      </div>
-      <div class="next">
-        <img id="beach" src="https://lh3.googleusercontent.com/QgaXFaXUDOnfeYhr1reilLmdrZhJ8mlqN8ITi9zYf3TkD98JqocSj_8pifV7OtkQhXhrmxQk1YzUzzCypfpncIPV4Uxp-aESua0UpCjUqrowqMF-NJPqiR0_iNiHU65oEISCs3N5-bIOsNo5kpCuGRXYhQXtjyknF3yEabOVcxx-0c-qq74WQ1SUnC3X7HHZA8ahlRBJy1Gkl0lV1QiLCYkRwuisHvl9idkZpOj_TZ3ujzrSbuQv2wnwVvj8EVMTK8rAvr7qBhPZvzqywls7iRMI1he31qY52kye7qg3mZOUkg5QaU0Il2wly__5JR03jN2-DN51rEb1xzIah1ywLXxplApxNdvu-kr8LGK42k1vcXuMhXP0kFs5eV5OtHbJs4_w6pZesAIKj0UEr4MOQXtU4YJMdYq6G1r-y_p4nwFcbJn6tMiheYX1eVwz7GrQNuGpsYXR9bbbToWh0bAISxqYGdmcJ79cUEyb8fRkyX5ihfBR8KcP03tqBM-M7ka8G9f0Ti4LPRnVlOmAJqfvzs8fxO6z_g-lhUX3m3F9zVGipVNPUe_WyL0s6-vdf2fJ9AYogEVugbEIBlJVY55Bew41yUt8FgBcNecxreiZTWF_iLTJ1Di481PC=w963-h1283-no"/>
-      </div>
-      <div class="next">
-        <img id="me"
-        src="https://lh3.googleusercontent.com/Vc6dZVcz_McOSPC6lX7feaYwVBJQ0HZBI7SA3h0HP1KnFbgLpBuHsu-LUz--brai7i6l_4feus2u5T4SwCYBL1Se-y0Nb5ppOtze_iyyMHRR5Lm48JWk69m66R0-As0gzeKYllGpR0ZsZaxwBcCi9GoeUutS4HoCUYhPReEoGGRAQlTu-Z3edpgd8GLwl6Ss3l8YDQrvRnMbVRSqzVyLufYF2u5LfbaFBWmdhBmzexEbZsS2GeM00ggEvZDcKnN1txKuEu6nXhJNFIJsiKtoaxpqq4e8K89ODiJpZR2D7rMaugAdAT5FMK6ycFpEqAGdEXJ9PK90HcscVqHWYg_d5zZ89QOlnAuyCf9ftDObrxtOkl4VGnnp5zYDpyfL24yf_DXKzufykBAzMGdRmcHcx82jl2TImVnlBGWOf0s4SF9JEFqeHKEMcibfjaQ9jiAedInEMDIyYw2Zih-3F665NUO_QBII1w9W1N_MF4ZYBHdSuZC8bSMyQKJ7dSM5Rjgb4wGKkOkuJTHahBYsXR-p-D3b3dBXZsjDFaj37tE8aKhPj38zVqFPrfwJQ8j2snRIC5gawTfX_25vSFdYYl86TDRnWWESrEeCwErnwgobH3dkwONeTPX2Jl-N=w963-h1283-no" />
-      </div>
-      <div class="next">
-        <img id="fam" src="https://lh3.googleusercontent.com/QzfYGyMkEXRMwqKGpG7u1TQ0pfBUVnDYEsZNhnC5PFVIoIi1dqKpAPQAocESd8gqN3MKZ8OWsuCQCyocItFP27FPvzsMJA9oodsNCX9C4eseSwjgid5Yc54wrMJewMuKTtAkjSfaBxbCBvDVnQPGw5_V39Md4wx_40VHYtdlDnJuVMLJkElKTmU52LqkNWnwx6L5xNsVAr4u6yk7jOhmr_RLDwqBLPBrX_Lk4aIsUFLw_QsTrknXH8a_FBOidlDpW1uvypuQrUqzesRz6a_hBAiWRE81OOhTWOl-7kkiwUIbfikZHmzt-2glGZGwZJdFwV5t6JW-ySIf45g7q-Hr9ZV4I4c_N5t0bug70AckZfgJjLbXtqIk2rw-F_WcaV26zDuORDU-wLerjoKB9H5U7NI7RJPPLUhcuoVdGi3oomVtRxPBDwwIcAnoN9zkWapylVlAjeECsGMYilzgglMnN1CJHmIygt1v2tqP_Mc46KTe2TU0_hxp77M-FFfstF5ETgAAwAsp58ogCXQkh0T7nBOjxwDt93-UiNr8tj-KBdObD-fUZBXHLWmLIIetZF-yAlhSCvTEzR1CmXzHZrsTF8-VNgLUiWxvXnSdTQitkc0p0B9F1yqiFwyy=w2160-h1217-no" />
-      </div>
-  </div>
-
-<!-- Who am I? section -->
-  <br>
-  <div id="WhoamI">
-    <h2 id="aboutme">Who am I? </h2>
-    <p>Hi! My name is Amanda Ma! I was born on February 23, 2000, so I am now 17 years old. I was born in Brooklyn, New York, but I grew up in Marlboro, New Jersey. I have two older siblings, a 21-year-old brother and 23-year-old sister. I also have an 8-year-old dog named Dasher.</p>
-  </div>
-
-<br>
-  <div class="parallex2">
-      <div class="half-width">
-      <h2 id="likesdislikesfun"> Likes, Dislikes, & Fun Facts!</h2>
-        <ol>
-          <div id="heading">
-            <lh>I like...</lh>
-          </div>
-          <li>listening to/playing music</li>
-          <li>FOOD</li>
-          <li>sleeping</li>
-          <li>dancing</li>
-          <li>binge-watching Youtube videos</li>
-          <li>filming & creating videos</li>
-        </ol>
-      </div>
-
-      <div class="half-width">
-        <ol>
-          <div id="heading">
-            <lh>I dislike...</lh>
-          </div>
-          <li>people who fidget</li>
-          <li>loud breathing</li>
-          <li>when people don't signal when switching lanes</li>
-        </ol>
-      </div>
-
-    <div class="half-width">
-      <ol>
-        <div id="heading">
-          <lh>Fun facts: I can...</lh>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Django Girls Blog</a></h1>
         </div>
-        <li>wiggle my ears!</li>
-        <li>solve a rubik's cube</li>
-      </ol>
-    </div>
-</div>
 
-  <div id="websites">
-    <ul>
-    <lh> Here are my favorite websites/social media!</lh>
-    <br>
-    <a id="web" href="https://www.youtube.com/"><img id="youtube" src="https://cdn1.iconfinder.com/data/icons/logotypes/32/youtube-512.png";></a>
-    <br>
-    <a id ="web" href="https://www.instagram.com/"><img id="instagram" src="https://images.vexels.com/media/users/3/137198/isolated/preview/07f0d7b69ef071571e4ada2f4d6a053a-instagram-icon-background-by-vexels.png";></a>
-    <br>
-    <a id="web" href="https://www.snapchat.com/"><img id="snapchat" src="http://mobile.cdn.softpedia.com/apk/images/icon_snapchat.png";></a>
-    <br>
-    <a id="web" href="https://www.pennyanddash.com"><img id="pennyanddash" src="https://lh3.googleusercontent.com/AcgdUWwwtQYQku2wmBG80zacJTqeam3bO8UD_YoqPedG6zV0d4-byWkdZ0bv48Pq8Jj3nhmBN9Z19HX5e0HzJSg4SCsJjZ-m5IcjyGAsBIWSdK4XfLGeAOeOoI9z_VQZXLWCOxmgbVeGlbOsADlOA6d0_pOM-S5uZu5pko-P3Oe0Aue7jWTwFrXQXkH-XgM8pTJsxIQ_W8SfqCeBWx2JvjMvff9zdjY3W61AnJcU4mzlinX_VPIj7a84Dl4CWzSotWMUpyTb5lU5CSatrUb6DUCvv2VV-MFQqdmaR4Ijgdnv9SJ6W85PyT1yLmPPSYxrtk833GL2dAGcrAgOIkPF07a_7llC20xjjT6CF9uqHZCOOm2Zl9EiMTR6IopqG18vIp_iC6EOzDxSSxJtUG6Q6qulWF0hRf5PyDy04NgN1uAzKqSM4oUBdYiLCI_-zGizS8813KpItfSMTtQOgZPHpwILb5kbDWXw1yVuZxLbszHT7XIZu6scGILUKJhxXkYmOvSBuw13Xt6uF_mJX5jSiKDhbVmG5tXkqcNdV4tqbepWuG-02TgNx4_C-fHbWUAFFtaa5QRc8e7DrhdqZGBfTZkN0Mjux6-C8Y3W-5M_fELu1IZ97GXcssBEBw=w750-h740-no";></a>
-    <!-- <a id="web" href="https://www.pennyanddash.com/"><img id="pennyanddash" src="" -->
-    </ul>
-  </div>
-
-
-<br>
-<div class="parallex3">
-<div id="girlswhocode">
-  <h3> Being a Girl Who Codes! </h3>
-  <p>7/25/17: I have had so much fun in Girls Who Code so far this summer! I have learned so much, met so many great people, and I can't wait to learn more. Here are photos and videos of what I've done so far this summer! </p>
-</div>
-
-
-<div class="gwc_pics">
-  <img id="mtc" src="https://lh3.googleusercontent.com/gcrjDUs-G1EUfEwxnjXQ9yuZNLhARZ6WOjT1_WU3UqxFKMrd1kqAbQDBscE1wzQ7r4hHtQ2QG-ZDJHSBMmys_xYg67LH_acJaeb5a28KMDF7p-p-ACApuJESRLRRfr3t_6ik4KirMdj09Pn63ka6yHwYw0Lot5EzBF-puWyNLx9cdpUuv1BqRsm9fdKUnLEXVw6LW8lwfCykJ5znuNsWR21_Oq2_poo79-GEihIhAVIUjuErLjIxegpBJOvF3CFQB1cPMeQ-GzsvjJlzj0TRdiG4ynYHiLwhc1e19BdaEiy67QYJHMiyCW3bRvFNRI7MFEzTXnnMivFVChAvsG-j4dfI1eSwG5VNoMDatXEWdaofgH8V933k0Si6ON5xNVTv6qxnE3WUk4s7FK81PyrG8ROB1IrujAaVQjuQkdZVZaQOtG4-4jXtTHNkDfWya_259YHonLEnGAuqCP1yJ9LyWNmHokxDQjoRT3hpMYTivO45nDIDmTPqI52mc4dRFjt8G6TeIBt2CAtXgUAZNl8uMqFMz4Z0OsK1UaroOqmUh19jHQarRQuh2fd5tbdQMjCKFmm1AIbgrtgpPKNKiS0avXM9bDWeAncpa1e0LkXHR8-8uGSUbEiMdk9t=w1536-h1152-no"/>
-</div>
-<div class ="gwc_pics">
-  <img id ="firstpic" src="https://lh3.googleusercontent.com/lDcTFdygkvbv0yG9cx2jg5Of6CSLuCQijOgYLXhShK8bBB2DiL66AEtgIq7rxpdIszYW1wqN0Gglc7uCKl1Hkk1PUBAfcbrt3PvX2WbReFJPwxdfmga6ARLFTxnn7evCWmIBXyizhTBhAST9T8q8KBiBxCCO5iiechHNsa9lFKY1XbtIFa1FLm2JD2slXIZE_kGqol5cMD5Dfwu95LnjJC4OR_QFjaAIRpTVQQt507d__xcy8v-qiDUJHlezA17xIvg4Yx61Agz-VGZijZh89MG_Q7MUUXe3S_TgVgiiaHn3R3vzy_LHRfl5I7oLDKFYHH3OV11SITcIY-fBoJ8KJITo59CkZIbGrt1biKJjS-Gl5ki1nTQ2zdxwImxedIj9D6bTYYrTKQc4uTIFP5g72rXpX3X91csyzdbU_I-DXHymqhSl9V-suhk_9rYvmy6TDQc8Q27MVRUjf3E_7E4RkeqFCbuxUP-CYatmJpASaDgcTbUuOBYidUAgj3Acrl-tlca0j6c16ngXQz_91izSI9K7ls-QD3BNgugCMkZEHqHQuPXGFbHASoqU4MK_Y8XMQqNwy3a_CA-5MV-kKZJw3QP7S8pN-w7p0utMC85ufYvfUtMcc_4qKAHO=w1257-h1152-no"/>
-</div>
-<div class="gwc_pics">
-  <img id = "linkedin"  src="https://lh3.googleusercontent.com/U2b74NE-ggE6lFDuWs2BODDo5mAZmo8x7TQk9ClT9sHes8ilT07GrzLr7Owg83rYtc9C3UFgzGL2X7lkVGnhusAwC_CLqIGYmm__UINyj0qUEcyNeuJuPvLOvc_qQTwUIj4JAGw8_YSxgz5Ves5hdhrrbZcS3PHHyssO185lLykpdKYNk08JoNrfZqlkuNk9dNRXAZz4VGgdEx04g2zST6GBobJ-kB7KxPf7mQKUaRBnVW8mAaW_IvRwixiCrJwf7-1GvMmTGCl2ttl0yZ-MhWJ0AgkyoXeYCR-egMe6w9UMBCTmK1KobWQr_tkijlbatDBXyrbSZYV7EpgGcvS6Dbot_tPCj7RiINDal7Gq75syPxk1ogAQQp4aH-aOUk3PXWeaUs1_X6LgwMHmA3-0D02OkjHP0nuJFAdjuJqrmcMJQ-zSO7E8LEakx3YSr34X7iLr-yc3II-KCXq0IsjLVq8gtLKaD9Wz1tUL3gl4HCz1qsiIjGfFCnTp5UKpQZuwoslBRZZnR29WiseQRc3JFJn6LERNmobgDGn0-AE8CXj4LytgwgAPL1nH22GmcIZVV3ynD1IoZH0N0On8K2WMhloxh4Ug581D6GxtbIMQOCMwzddULjYWgan6fQ=w963-h1283-no"/>
-</div>
-<div class="gwc_pics">
-  <img id="heart" src="https://lh3.googleusercontent.com/WQS8HHdWcy954DF4IF8wt4txJnKJLu3V4YppKgh26xPpahoejMXuv_K9xLQJq5cd-3qF93kCKejpv4w4Jh5BzeMHsy8W19l_IeJv30r4TbugRQP4_NlJv_fz8ZyNy1SBrTCQaImHhfmNKk6_kEdsuN63v1e9LyVrJQmPaDyPMn-dq-3AEQACZ52D5c1OhT_RD7WYrombjIdbtgCknWEdKvY6oW9WO76LSPNXPOSZg0zXg48yGmVoV2sYCD_qttPoaciJ0_xK-fTXXXzSJFzH9QuNc7TDgW-qw7sWZqMMuPmBwcXIvYgM7Ayrxb4mvNy0K0FGyLqUzVZogmGaysJQeZQZLzh15hQOX8vlSY5vaTgDCnB1rv0zTNjoQwIqZ8zfZ1R1xkDbfuhwk2QZa_gJzRcxzfOif1jrARe4bpZKzKGNgYebzZIP3DXDqCwIlXDHDu0_HQIMSI37TFK23oqwHVp2pCqV4iTMEh08hvbzx-j0rbQ4TIZLiT1HQU8QZXWf-nY2NSSb5tizC5_TWkKdCJSanOiZhfPy9SxmqUBgSs4bg8kt745VF89Nzo-hnvsVTQElNWQ44oUbPNYSwEKZeks_aFxehWx5iZGh57xf1KGKfnnEC_8QA9Z08g=w1842-h1283-no"/>
-</div>
-<div class="gwc_pics">
-  <img id = "bowling" src="https://lh3.googleusercontent.com/4Cj7g-yQaqBZfBQO6RPgA2QIQuDQhb-THTQiG0fDIYPmPhZ2n8DgbXlPgROKBSRq7QQaCzD4lU2iHRJgweYTMos93PeQ8DOKWriHUEa-XxHORkSmLinscq6n8Fkci_OrzH9Iw9eUkTLLDF0NJQnrlyQuK4Sn0af-gdq5q3yJHFPSgdd0OWzrF88xT9cMA-Pi8VXUl-qt4-shG1QmDpBBVl49U1oV8TO2KD2Y6jOSnvqGguh29q7UDR6NFFF8MOhJcSzE26t8J5aP0U80v5CIQE39ldHm5aF2sPAaBtnrJd6lfe7Vl9t9Kc0ejjy2UcujS-CEUiOwZbu0lfZMh09-MKClqHrLnx2lIIVNt3vh1MVG8dCmx4Vr2y27tGEzy0mxSANNOH2ftnR0WAY02bczCKcnt9iuEoIjNsW9aTBOy7ppzGld2uJwui9xtRE7fKOe8NN4TtzBG7o86EuofCXyEyNalpTQpuXQ6RsWTaQGrYLIsUTVv7ou7OvdJmoKNHKoz1cAmee0vVJg9kvTTrs_IpXtfeYXcN5bjMd_2D1t2vyGj1CMY1y-19NAlRj-RjJyj_LKSAna0-W6lsb792rszxgIXwqFis4VTYa5Sgo-sOJ5xv7DrDKCjbNVxg=w709-h950-no"/>
-</div>
-
-<br>
-<div id="scratch" class="game">
-  <h2> This is the game I made on Scratch! --> </h2>
-</div>
-<div class="game">
-  <iframe allowtransparency="true" width="485" height="402" src="https://scratch.mit.edu/projects/embed/168725419/?autostart=false" frameborder="0" allowfullscreen></iframe>
-</div>
-</div>
-  </body>
+        {% for post in posts %}
+            <div>
+                <p>published: {{ post.published_date }}</p>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
+    </body>
 </html>
